@@ -7,7 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -98,6 +98,33 @@ textarea {
    ========================================================================== */
 
 
+/* -------- GENERAL STYLES -------- */
+
+
+html  {
+    background: url(../img/galaxy.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 16px;
+    height: 100%;
+}
+
+body  {
+    color: #fff;
+    font-size: 1em;
+}
+
+ul,
+ol  {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-container  {
+    width: 80%;
+}
 
 
 
@@ -192,7 +219,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -210,7 +237,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -286,5 +313,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
