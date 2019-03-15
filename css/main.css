@@ -102,16 +102,19 @@ textarea {
 
 
 html  {
-    background: url(../img/galaxy.jpg) no-repeat center;
-    /*background: url(../img/pigments.jpg) no-repeat center;*/
+    /*background: url(../img/galaxy.jpg) no-repeat center;*/
+    background: url(../img/pigments.jpg) repeat center;
     background-size: cover;
     font-size: 16px;
     height: 100%;
 }
 
 body  {
-    color: #a9a9a9;
+    color: #fff;
     font-size: 1em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul,
@@ -123,9 +126,70 @@ a {
     text-decoration: none;
 }
 
-.content-container  {
-    width: 80%;
+h1, h2, h3, p, a {
+    line-height: 1.3;
+    text-align: center;
 }
+
+.content-container  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+/* -------- BASE HEADER + FOOTER STYLES -------- */
+
+
+header,
+footer  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+/* -------- MAIN SECTION -------- */
+
+
+/*.content-container  {
+    display: flex;
+    justify-content: center;
+}*/
+
+/* move to media query */
+.content-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: inherit;
+}
+
+.content-item  {
+    background:rgba(90%,82%,40%,0.7);
+    border: 3px solid #a9a9a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+
 
 
 
