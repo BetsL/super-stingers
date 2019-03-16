@@ -110,11 +110,14 @@ html  {
 }
 
 body  {
-    color: #fff;
-    font-size: 1em;
-    margin: 0;
+    /*color: #faf0e6;*/
+    color: #f2f3f4;
+    /*color: #1e1e1e;*/
+    font-size: 1.1em;
+    /*margin: 50px;*/
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul,
@@ -144,23 +147,90 @@ h1, h2, h3, p, a {
 
 header,
 footer  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-header .content-container {
+    color: #a9a9a9;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0 20px auto auto;
+    width: 100%;
+}
+
+header .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
     margin: 0;
+    padding: 0 20px;
+    background: rgba(0,0,0,0.7);
+    border-bottom: 1px solid #a9a9a9;
+}
+
+header .header-container {
+    color: #a9a9a9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin: 20px 0 20px 20px;
+    width: 60%;
+}
+
+.header-container h1  {
+    line-height: 0;
+    font-size: 1.5em;
+}
+
+.header-container h3  {
+    color: #a9a9a9;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 35%;
+}
+
+nav ul  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+footer .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-top: 20px;
+    border-top: 1px solid #a9a9a9;
+}
+
+footer .tag {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .content-container h3  {
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+}
+
+footer .tag h4 {
+    margin: 20px;
 }
 
 /* -------- MAIN SECTION -------- */
 
 
+.page h1  {
+    padding: 40px 0 0 0;
+}
 /*.content-container  {
     display: flex;
     justify-content: center;
@@ -172,7 +242,8 @@ header .content-container {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: inherit;
+    margin: 0 50px auto;
+    width: 90%;
 }
 
 .content-item  {
@@ -182,11 +253,22 @@ header .content-container {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+    font-family: 'Roboto', sans-serif;
+    /*font-style: italic;*/
     width: 300px;
-    height: 300px;
+    height: 375px;
+    /*transform: skew(90deg);*/
 }
 
-
+footer .content-container  {
+    /*border: 1px solid #a9a9a9;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: rgba(0,0,0,0.7);
+    margin-top: 40px;
+}
 
 
 
