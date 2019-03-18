@@ -216,6 +216,10 @@ nav ul  {
     width: 100%;
 }*/
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 footer .content-container {
     display: flex;
     justify-content: center;
