@@ -102,7 +102,6 @@ textarea {
 
 
 html  {
-    /*background: url(../img/galaxy.jpg) no-repeat center;*/
     background: url(../img/pigments.jpg) repeat center;
     background-size: cover;
     font-size: 16px;
@@ -110,12 +109,8 @@ html  {
 }
 
 body  {
-    /*color: #faf0e6;*/
-    /*color: #f2f3f4;*/
-    /*color: #1e1e1e;*/
     color: #1f2219;
     font-size: 1.1em;
-    /*margin: 50px;*/
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -163,39 +158,17 @@ header .content-container {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    /*padding: 0 20px;*/
     padding: 50px 0 25px 0;
     background: rgba(0,0,0,0.7);
     border-bottom: 1px solid #a9a9a9;
 }
-
-/*header .content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-    padding: 0 20px;
-    background: rgba(0,0,0,0.7);
-    border-bottom: 1px solid #a9a9a9;
-}
-
-header .header-container {
-    color: #a9a9a9;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    margin: 20px 0 20px 20px;
-    width: 60%;
-}*/
 
 .header-container h1  {
     line-height: 0;
     font-size: 1.5em;
 }
 
-.header-container h3  {
+.header-container h3, a  {
     color: #a9a9a9;
 }
 
@@ -270,6 +243,7 @@ footer .tag {
 footer .content-container h3  {
     border: 1px solid #d3d3d3;
     padding: 20px;
+    /*width: 33.3%;*/
 }
 
 footer .tag {
@@ -322,6 +296,14 @@ footer .tag h4 {
     width: 90%;
 }
 
+.content-grid a {
+    transition: .5s;
+}
+
+.content-grid a:hover {
+  background-color: gold;
+}
+
 .content-item  {
     background:rgba(90%,82%,40%,0.7);
     border: 11px solid #a9a9a9;
@@ -337,6 +319,7 @@ footer .tag h4 {
 }
 
 .content-item h3  {
+    color: #1f2219;
     font-weight: 500;
 }
 
@@ -348,6 +331,10 @@ footer .content-container  {
     flex-flow: row wrap;
     background: rgba(0,0,0,0.7);
     margin-top: 40px;
+}
+
+footer .content-container a:hover {
+    text-decoration: underline;
 }
 
 
@@ -453,8 +440,109 @@ footer .content-container  {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+    .header-container h1 {
+        font-size: 1.1em;
+    }
+
+    nav ul li {
+        font-size: 0.7em;
+    }
+
+    .page h1  {
+        font-size: 1.3em;
+    }
+
+    .content-item {
+        width: 200px;
+        height: 275px;
+    }
+
+    .content-item h3  {
+        font-size: 0.9em;
+    }
+
+    footer .content-container h3  {
+        border: 1px solid #d3d3d3;
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-container h1 {
+      font-size: 2em;
+  }
+
+  nav ul li {
+      font-size: 1em;
+  }
+
+  footer .content-container h3  {
+      border: 1px solid #d3d3d3;
+      font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1024px)  {
+  header .content-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 100%;
+      padding: 50px;
+  }
+
+  .header-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+  }
+
+  .header-container h1 {
+      font-size: 2.1em;
+  }
+
+  nav {
+      display: flex;
+      justify-content: flex-end;
+      width: 40%;
+  }
+
+  nav ul  {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  nav ul li {
+      font-size: 1.3em;
+  }
+
+  footer .content-container h3  {
+      border: 1px solid #d3d3d3;
+      font-size: 1.5em;
+  }
+
+  footer .tag  {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 0 25px;
+      padding: 0;
+  }
+
+  footer .tag .copyright  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      margin: 0;
+      padding: 0;
+      width: 10%;
+  }
 }
 
 @media print,
