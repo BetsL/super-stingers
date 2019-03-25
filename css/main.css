@@ -391,11 +391,11 @@ footer .tag h4 {
 @media only screen and (min-width: 240px) and (max-width: 320px) {
 
     .header-container h1 {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     nav ul li {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .page h1  {
