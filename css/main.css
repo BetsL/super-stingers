@@ -152,6 +152,11 @@ footer  {
     width: 100%;
 }
 
+header {
+    position: fixed;
+    top: 0;
+}
+
 header .content-container {
     background: rgba(0,0,0,0.7);
     border-bottom: 1px solid #a9a9a9;
