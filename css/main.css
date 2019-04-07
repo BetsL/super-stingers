@@ -253,6 +253,9 @@ footer .tag h4 {
 
 /* -------- MAIN SECTION -------- */
 
+.page {
+    margin-top: 200px;
+}
 
 .page h1  {
     color: #000;
