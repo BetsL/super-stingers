@@ -105,7 +105,8 @@ html  {
     background: url(../img/pigments.jpg) repeat center;
     background-size: cover;
     font-size: 16px;
-    height: 100%;
+    /*height: 100%;*/
+    min-height: 100vh;
 }
 
 body  {
@@ -254,19 +255,19 @@ footer .tag h4 {
 /* -------- MAIN SECTION -------- */
 
 .page {
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
-.page h1  {
+/*.page h1  {
     color: #000;
-    font-weight: 700;
+    font-weight: 900;
     font-style: italic;
     padding: 40px 0 0 0;
 }
 
 .page h1 span {
     color: #aebdc4;
-}
+}*/
 
 .content-container  {
     padding-bottom: 50px;
@@ -397,6 +398,10 @@ footer .tag h4 {
    ========================================================================== */
 
 @media only screen and (min-width: 240px) and (max-width: 320px) {
+
+    .page {
+        margin-top: 250px;
+    }
 
     .header-container h1 {
         font-size: 1.1em;
