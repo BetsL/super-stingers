@@ -27,7 +27,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header>
+  <div id="header">
       <div class="content-container">
           <div class="header-container">
               <h1>Kindergarten | Room 103</h1>
@@ -41,7 +41,7 @@
               </ul>
           </nav>
       </div>
-  </header>
+  </div>
 
   <main>
 
@@ -130,6 +130,21 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script>
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+      } else {
+        document.getElementById("header").style.top = "-150px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+
+  </script>
 </body>
 
 </html>
