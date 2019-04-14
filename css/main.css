@@ -156,7 +156,7 @@ footer  {
 #header {
     position: fixed;
     top: 0;
-    transition: all 500ms ease-in-out;
+    transition: all 600ms ease-in-out;
 }
 
 #header .content-container {
@@ -166,7 +166,7 @@ footer  {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-    height: 75px;
+    height: 90px;
     margin: 0;
     padding: 50px 0 25px 0;
 }
